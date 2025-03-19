@@ -5,7 +5,9 @@
 		- records size and information about databases
 	Notes:
 		- queries taken from https://stackoverflow.com/a/18014581
-
+	Change History:
+		- 2/8/2025: initial creation
+		- 3/19/2025: added _mb to column names
 
 
 */
@@ -52,15 +54,15 @@ BEGIN
 		database_name,
 		state_desc,
 		recovery_model_desc,
-		total_size,
-		data_size,
-		data_used_size,
-		log_size,
-		log_used_size,
+		total_size_mb,
+		data_size_mb,
+		data_used_size_mb,
+		log_size_mb,
+		log_used_size_mb,
 		full_last_backup_on,
-		full_backup_size,
+		full_backup_size_mb,
 		log_last_backup_on,
-		log_backup_size
+		log_backup_size_mb
 	)
 	SELECT
 		  d.database_id

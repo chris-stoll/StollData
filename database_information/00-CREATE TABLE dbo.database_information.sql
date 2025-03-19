@@ -7,15 +7,15 @@ CREATE TABLE dbo.database_information(
 	,database_name NVARCHAR(128) NOT NULL
 	,state_desc NVARCHAR(100) NULL
 	,recovery_model_desc NVARCHAR(100) NULL
-	,total_size DECIMAL(18,2) NULL
-	,data_size DECIMAL(18,2) NULL
-	,data_used_size DECIMAL(18,2) NULL
-	,log_size DECIMAL(18,2) NULL
-	,log_used_size DECIMAL(18,2) NULL
+	,total_size_mb DECIMAL(18,2) NULL
+	,data_size_mb DECIMAL(18,2) NULL
+	,data_used_size_mb DECIMAL(18,2) NULL
+	,log_size_mb DECIMAL(18,2) NULL
+	,log_used_size_mb DECIMAL(18,2) NULL
 	,full_last_backup_on DATETIME NULL
-	,full_backup_size DECIMAL(18,2) NULL
+	,full_backup_size_mb DECIMAL(18,2) NULL
 	,log_last_backup_on DATETIME NULL
-	,log_backup_size DECIMAL(18,2) NULL
+	,log_backup_size_mb DECIMAL(18,2) NULL
 );
 
 
