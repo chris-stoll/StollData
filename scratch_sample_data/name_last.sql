@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.name_last;
 
 CREATE TABLE dbo.name_last (
 	last_name VARCHAR(50) NOT NULL 
-		CONSTRAINT pk_dbo_name_last PRIMARY KEY CLUSTERED (last_name)
+		CONSTRAINT uq_dbo_name_last UNIQUE (last_name)
 ) ;
 
 INSERT INTO dbo.name_last (last_name)

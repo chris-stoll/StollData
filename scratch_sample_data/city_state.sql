@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS dbo.city_state;
 CREATE TABLE dbo.city_state (
 	city_name VARCHAR(50) NOT NULL,
 	state_name VARCHAR(50) NOT NULL
-		CONSTRAINT pk_dbo_city_state PRIMARY KEY CLUSTERED (city_name, state_name)
+		CONSTRAINT uq_dbo_city_state UNIQUE (city_name, state_name)
 );
 
 INSERT INTO dbo.city_state(city_name, state_name)

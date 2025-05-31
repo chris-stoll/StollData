@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.name_first_female;
 
 CREATE TABLE dbo.name_first_female (
 	first_name VARCHAR(50) NOT NULL 
-		CONSTRAINT pk_dbo_name_first_female PRIMARY KEY CLUSTERED (first_name)
+		CONSTRAINT uq_dbo_name_first_female UNIQUE (first_name)
 ) ;
 
 INSERT INTO dbo.name_first_female (first_name)
