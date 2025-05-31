@@ -1,15 +1,15 @@
 
-DROP TABLE IF EXISTS dbo.grocery_product;
+DROP TABLE IF EXISTS dbo.product_grocery;
 
-CREATE TABLE dbo.grocery_product (
+CREATE TABLE dbo.product_grocery (
 	product_name VARCHAR(50) NOT NULL
-		CONSTRAINT uq_dbo_grocery_product UNIQUE (product_name),
+		CONSTRAINT uq_dbo_product_grocery UNIQUE (product_name),
 	price MONEY NULL,
 	category VARCHAR(50) NULL
 		
 );
 
-INSERT INTO dbo.grocery_product(product_name,price,category)
+INSERT INTO dbo.product_grocery(product_name,price,category)
 SELECT 
 	 a.product_name, a.price, a.category
 FROM 
