@@ -121,7 +121,6 @@ VALUES
 	(N'Darius'),
 	(N'Darrell'),
 	(N'Darren'),
-	(N'Darrell'),
 	(N'Darryl'),
 	(N'David'),
 	(N'Dean'),
