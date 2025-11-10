@@ -1,0 +1,1 @@
+CREATE TYPE dbo.IntCollection AS TABLE (id INT NOT NULL PRIMARY KEY (id));
