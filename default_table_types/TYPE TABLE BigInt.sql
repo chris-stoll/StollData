@@ -1,0 +1,1 @@
+CREATE TYPE dbo.BigIntCollection AS TABLE (id BIGINT NOT NULL PRIMARY KEY (id));
